@@ -7,7 +7,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle (required)
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
 
 Plugin 'nanotech/jellybeans.vim' 
 Plugin 'sonph/onehalf', {'rtp': 'vim/'}
@@ -59,7 +58,12 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 set encoding=utf-8
 
+" syntastic config
+" let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_check_on_open = 1
 let python_highlight_all=1
+
+
 syntax on
 
 set number
@@ -74,3 +78,4 @@ set hlsearch
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 set clipboard=unnamed
+
