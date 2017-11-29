@@ -15,6 +15,9 @@ Plugin 'rakr/vim-two-firewatch'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+Plugin 'davidhalter/jedi-vim'
+
 call vundle#end()
 
 filetype plugin indent on
